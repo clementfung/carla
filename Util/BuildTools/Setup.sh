@@ -70,7 +70,7 @@ pushd ${CARLA_BUILD_FOLDER} >/dev/null
 # -- Get and compile libc++ ----------------------------------------------------
 # ==============================================================================
 
-LLVM_BASENAME=llvm-8.0
+LLVM_BASENAME=llvm-12.0
 
 LLVM_INCLUDE=${PWD}/${LLVM_BASENAME}-install/include/c++/v1
 LLVM_LIBPATH=${PWD}/${LLVM_BASENAME}-install/lib
@@ -331,8 +331,8 @@ unset GTEST_BASENAME
 # -- Get Recast&Detour and compile it with libc++ ------------------------------
 # ==============================================================================
 
-RECAST_HASH=0b13b0
-RECAST_COMMIT=0b13b0d288ac96fdc5347ee38299511c6e9400db
+RECAST_HASH=0ef043
+RECAST_COMMIT=0ef0433b0194dbeadd84632f92ae9eb5a11d58f8
 RECAST_BASENAME=recast-${RECAST_HASH}-${CXX_TAG}
 
 RECAST_INCLUDE=${PWD}/${RECAST_BASENAME}-install/include
